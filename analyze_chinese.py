@@ -8,19 +8,15 @@ import jieba
 with open("Chinese_story.txt", encoding="utf-8") as f:
     text = f.read()
 
-
 words = jieba.cut(text)
 
 cleaned_words = [word.strip() for word in words if word.strip() and len(word.strip()) > 1]
 
-
 word_counts = Counter(cleaned_words)
-
 
 word_frequencies = pd.DataFrame(word_counts.items(), columns=['word', 'frequency'])
 
 word_frequencies.to_csv("word_frequencies.csv", index=False)
-
 
 wordcloud = WordCloud(
     font_path="NotoSansSC-VariableFont_wght.ttf",  
@@ -32,9 +28,7 @@ wordcloud = WordCloud(
     max_font_size=100  
 ).generate_from_frequencies(word_counts)
 
-
 wordcloud.to_file("wordcloud.png")
-
 
 top_20_words = word_frequencies.nlargest(20, 'frequency')
 plt.figure(figsize=(10,6))
