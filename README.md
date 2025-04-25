@@ -1,11 +1,11 @@
-Chinese Text Analysis with Jieba and Python
+# Chinese Text Analysis with Jieba and Python
 
 About the Project
 
 This project analyzes the Chinese text "紅樓夢" (Dream of the Red Chamber) by Xueqin Cao, one of China's most famous works of literature. The goal is to apply natural language processing (NLP) techniques to break down the text, count how often each word appears, and identify common word pairs (bigrams).
 Using Python and the Jieba library, the project segments the Chinese text into individual words. The frequency of each word is calculated using pandas and Counter, showing how often each word appears. This analysis helps uncover language patterns in Chinese texts and lays the groundwork for further exploration in computational linguistics and NLP.
 
-Tools Used
+## Tools Used
 
     Python
     Jieba – for Chinese word segmentation
@@ -26,7 +26,7 @@ Tools Used
     7. Create a Pandas DataFrame
     8. Save the DataFrame to a CSV File
 
-When you run the script:
+## When you run the script:
 
     - It reads and segments the Chinese text.
     - Saves a CSV file (word_frequencies.csv) with the word frequencies.
@@ -34,7 +34,7 @@ When you run the script:
     - Creates a bar chart (top20_words.png) for the top 20 most frequent words.
     - Prints the top bigrams (frequent word pairs) in the terminal.
 
-Special thanks
+## Special thanks
 
     Project Gutenberg - for the open-access Chinese texts
 
