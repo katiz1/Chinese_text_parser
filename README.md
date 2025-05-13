@@ -15,23 +15,23 @@ Using Python and the Jieba library, the project segments the Chinese text into i
     wordcloud 
     Noto Sans SC  – for showing Chinese characters correctly in the word cloud
 
-    1. Create a Virtual Environment
+    - Create a Virtual Environment
     
-    2. Install Required Libraries: 
+    - Install Required Libraries: 
     pip install jieba pandas matplotlib seaborn wordcloud
     
-    3.Add a Chinese Font
+    - Add a Chinese Font
     Download a Chinese font Noto Sans SC from Google Fonts. Place the .ttf file in the same folder as the script.
     
-    4. Download a Chinese story (I used 《紅樓夢》 from Project Gutenberg) and save it as a .txt file in the same folder.
+    - Download a Chinese story (I used 《紅樓夢》 from Project Gutenberg) and save it as a .txt file in the same folder.
     
-    5.Open the text and tokenize it with Jieba
+    - Open the text and tokenize it with Jieba
     
-    6. Use Counter from the collections module to count the frequency of each word
+    - Use Counter from the collections module to count the frequency of each word
     
-    7. Create a Pandas DataFrame
+    - Create a Pandas DataFrame
     
-    8. Save the DataFrame to a CSV File
+    - Save the DataFrame to a CSV File
 
 ## When you run the script:
 
